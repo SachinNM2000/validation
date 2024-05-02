@@ -1,0 +1,62 @@
+<html>
+    <head><title>New</title></head>
+    <body>
+        <h1>Validation</h1>
+        <img src="./logo.jpg"><br><br>
+        <form>
+            <label>Name*</label>
+            <input type="text" required placeholder="first name" minlength="5" maxlength="10"/>
+            <input type="text" required placeholder="last name" minlength="5" maxlength="8"/>
+            <br><br>
+            <label>Email*</label>
+            <input type="email" required placeholder="enter your email"/>
+            <br><br>
+            <label>DOB</label>
+            <input type="date">
+            <br><br>
+            <label>Gender</label>
+            <br>
+            <input type="radio" name="123">Male
+            <input type="radio" name="123">Female
+            <br><br>
+            <label>Work Phone</label>
+            <input type="text" required placeholder="enter 10 digits number" pattern="[6-9][0-9]{9}"/>
+            <br><br>
+            <label>Cell Phone</label>
+            <input type="text" required placeholder="enter 10 digits number" pattern="[6-9][0-9]{9}"/>
+            <br><br>
+            <label>Vehicle number:</label>
+            <input type="text" required placeholder="eg:KA01HC9892" pattern="[a-z,A-Z]{2}[0-9]{2}[a-z,A-Z]{2}[0-9]{4}"/>
+            <br><br>
+            <label>Street Adress*</label>
+            <br>
+            <textarea cols="20" rows="2"></textarea>
+            <br><br>
+            <label>City</label>
+            <select required >
+                <option>--select--</option>
+                <option>Benagluru</option>
+                <option>Mandya</option>
+                <option>Kodagu</option>
+                <option>Kolar</option>
+                <option>Mysuru</option>
+                
+            </select>
+            
+            <br><br>
+            <label>State</label>
+            <input type="text" value="Karnataka" required readonly >
+            <br><br>
+            <label>Country</label>
+            <input type="text" value="India" required disabled>
+            <br><br>
+            <label>Zip/Post Code</label>
+            <input type="number">
+            <br><br>
+            <input type="checkbox" required>Please accept <a href="http://www.greetlabs.com/" > Terms and Conditions</a>
+            <br><br>
+            <input type="submit" value="Login">
+            <input type="reset" value="cancel">
+        </form>
+    </body>
+</html>
